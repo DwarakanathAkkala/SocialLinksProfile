@@ -9,13 +9,26 @@
     font-family: "Inter";
 }
 
+body {
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+    height: 100vh;
+    width: 100%;
+}
+
 .container {
     background-color: hsl(0, 0%, 12%);
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    margin: 10vh auto auto auto;
     width: 90%;
     border-radius: 12px;
 }
@@ -53,15 +66,37 @@ img {
     border-radius: 50%;
 }
 
-section p {
+.info {
+    margin-bottom: 0.5rem;
+}
+
+section p, section a {
     display: grid;
     justify-content: center;
     color: hsl(0, 0%, 100%);
 }
 
+a {
+    background-color: hsl(0, 0%, 20%);
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    width: 80%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
 
 @media screen and (min-width: 1440px) {
     .container{
-        width: 30%;
+        width: 25%;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 }
