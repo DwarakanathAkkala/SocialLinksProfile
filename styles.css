@@ -1,0 +1,67 @@
+
+@font-face {
+    font-family: "Inter";
+    src: url("/assets/fonts/static/Inter-Regular.ttf");
+}
+
+:root {
+    background-color: hsl(0, 0%, 8%);
+    font-family: "Inter";
+}
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 10vh auto auto auto;
+    width: 90%;
+    border-radius: 12px;
+}
+
+
+img, figure {
+    display: flex;
+    justify-self: center;
+}
+
+figure {
+    margin-bottom: 0;
+}
+
+h1, h2 {
+    display: grid;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 0.75rem;
+    color: hsl(75, 94%, 57%);
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+section p {
+    display: grid;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 30%;
+    }
+}
